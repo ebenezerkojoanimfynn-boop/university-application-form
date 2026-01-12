@@ -1,0 +1,382 @@
+/* ===== Global ===== */
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#E6E6FA;        /* lavender */
+  color:#2e1a47;             /* deep purple */
+}
+
+.container{
+  width: 900px;
+  max-width: 92%;
+  margin: 24px auto;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(46,26,71,0.18);
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 10px 30px rgba(46,26,71,0.10);
+}
+
+/* ===== Header ===== */
+.header{
+  text-align:center;
+}
+.header h1{
+  margin: 8px 0 4px;
+  letter-spacing: 0.5px;
+}
+.header p{
+  margin: 6px 0 0;
+  opacity: 0.85;
+}
+.progress{
+  margin: 14px auto 0;
+  width: 420px;
+  max-width: 90%;
+  height: 10px;
+  background: rgba(46,26,71,0.12);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress .bar{
+  height: 100%;
+  width: 20%; /* set per page */
+  background: rgba(46,26,71,0.55);
+}
+
+/* ===== Form blocks ===== */
+fieldset{
+  border: 1px solid rgba(46,26,71,0.25);
+  border-radius: 12px;
+  padding: 16px 16px 10px;
+  margin: 14px 0;
+  background: rgba(255,255,255,0.40);
+}
+legend{
+  padding: 0 10px;
+  font-weight: bold;
+}
+.row{
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.col{
+  flex: 1;
+  min-width: 260px;
+}
+label{
+  display: block;
+  margin: 10px 0 6px;
+  font-weight: 600;
+}
+input, select, textarea{
+  width: 95%;
+  padding: 10px 10px;
+  border: 1px solid rgba(46,26,71,0.25);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.85);
+  color: #2e1a47;
+  outline: none;
+}
+input:focus, select:focus, textarea:focus{
+  border-color: rgba(46,26,71,0.65);
+  box-shadow: 0 0 0 3px rgba(46,26,71,0.12);
+}
+
+.inline{
+  display:flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 8px 0 6px;
+}
+.inline input{
+  width: auto;
+}
+.inline label{
+  margin: 0;
+  font-weight: 500;
+}
+.gender-box{
+  display: flex;
+  gap: 24px;
+  margin-top: 10px;
+}
+
+.gender-option{
+  flex: 1;
+  text-align: center;
+  padding: 12px 8px;
+  border: 1px solid rgba(46,26,71,0.25);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.4);
+}
+
+.gender-option label{
+  display: block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.gender-option input{
+  width: auto;
+}
+
+
+/* ===== Buttons & nav ===== */
+.nav{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  gap: 12px;
+  margin-top: 14px;
+}
+.btn, .linkbtn{
+  display:inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(46,26,71,0.25);
+  text-decoration: none;
+  color: #2e1a47;
+  background: rgba(255,255,255,0.55);
+  font-weight: 700;
+}
+.btn:hover, .linkbtn:hover{
+  background: rgba(255,255,255,0.75);
+}
+.primary{
+  background: rgba(46,26,71,0.70);
+  color: #fff;
+  border-color: rgba(46,26,71,0.70);
+}
+.primary:hover{
+  background: rgba(46,26,71,0.85);
+}
+.footer{
+  text-align:center;
+  opacity: 0.75;
+  margin-top: 16px;
+  font-size: 13px;
+}
+.gender-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 8px;
+  max-width: 420px;
+}
+
+.gender-grid .gcol{
+  text-align: center;
+  border: 1px solid rgba(46,26,71,0.18);
+  border-radius: 12px;
+  padding: 10px 8px;
+  background: rgba(255,255,255,0.35);
+}
+
+.gender-grid .gcol label{
+  display:block;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.gender-grid .gcol input{
+  width: auto;
+}
+/* spacing between form blocks */
+.form-group{
+  margin-bottom: 18px;
+}
+
+/* spacing between rows */
+.row{
+  margin-bottom: 16px;
+}
+
+/* make labels breathe */
+label{
+  margin-bottom: 6px;
+}
+/* give name row more breathing room */
+.name-row{
+  gap: 30px;
+}
+
+/* optional: make each name input slightly taller */
+.name-row input{
+  padding: 12px;
+}
+.radio-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+  max-width: 360px;
+}
+
+.radio-item{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid rgba(46,26,71,0.22);
+  border-radius: 10px;
+  background: rgba(255,255,255,0.35);
+  cursor: pointer;
+}
+
+.radio-item input{
+  width: auto;
+  margin: 0;
+}
+.checkbox-list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.check-item{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+}
+
+.check-item input{
+  transform: scale(1.1);
+}
+/* === Declaration styling (Page 5) === */
+.declaration-box{
+  margin-top: 12px;
+}
+
+.declaration-item{
+  display: flex;
+  align-items: flex-start;   /* aligns checkbox to top of text */
+  gap: 12px;
+  line-height: 1.5;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.declaration-item input[type="checkbox"]{
+  margin-top: 3px;           /* visual alignment fix */
+  width: auto !important;
+}
+
+
+/* ===============================
+   FINAL POLISH (safe overrides)
+   Paste at END of style.css
+================================ */
+
+/* Make widths behave properly */
+* { box-sizing: border-box; }
+
+/* Slightly cleaner page feel */
+body{
+  line-height: 1.45;
+}
+
+/* Container: more “card” + clean shadow */
+.container{
+  box-shadow: 0 12px 28px rgba(46,26,71,0.10);
+  backdrop-filter: blur(6px);
+}
+
+/* Fieldset: less “boxy”, more premium */
+fieldset{
+  border: 1px solid rgba(46,26,71,0.18);
+  background: rgba(255,255,255,0.58);
+}
+
+/* Legend: clearer section title */
+legend{
+  font-size: 15px;
+  letter-spacing: 0.2px;
+}
+
+/* Full width for normal inputs only (NOT radios/checkboxes) */
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea{
+  width: 100% !important;
+}
+
+/* Keep radios + checkboxes normal size */
+input[type="radio"],
+input[type="checkbox"]{
+  width: auto !important;
+}
+
+  border-radius: 10px;
+  transition: box-shadow .15s ease, border-color .15s ease, transform .05s ease;
+}
+
+/* Better focus feedback (looks pro during demo) */
+input:focus, select:focus, textarea:focus{
+  border-color: rgba(46,26,71,0.70);
+  box-shadow: 0 0 0 4px rgba(46,26,71,0.12);
+}
+
+/* Slight hover lift (subtle) */
+input:hover, select:hover, textarea:hover{
+  border-color: rgba(46,26,71,0.35);
+}
+
+/* Labels: spacing consistency */
+label{
+  margin-top: 12px;
+}
+
+/* Rows: make side-by-side layouts breathe */
+.row{
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+/* Links: make navigation look intentional */
+a{
+  color: rgba(46,26,71,0.92);
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+/* Buttons: more “classy”, not default browser */
+button, .btn{
+  border-radius: 10px;
+  padding: 10px 14px;
+  border: 1px solid rgba(46,26,71,0.22);
+  background: rgba(255,255,255,0.75);
+  cursor: pointer;
+}
+button:hover, .btn:hover{
+  background: rgba(255,255,255,0.92);
+}
+
+/* Primary buttons (if you already use .primary) */
+.primary{
+  background: rgba(46,26,71,0.82);
+  border-color: rgba(46,26,71,0.82);
+  color: #fff;
+}
+.primary:hover{
+  background: rgba(46,26,71,0.92);
+}
+
+/* Radios/checkboxes: keep your HTML, just tidy alignment */
+.radio-item, .declaration-item{
+  border: 1px solid rgba(46,26,71,0.16);
+  background: rgba(255,255,255,0.42);
+  border-radius: 10px;
+}
+
+
+
+
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>University Application - Page 4</title>
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body bgcolor="lavender" text="purple">
+
+<center>
+  <h1>University Application Form</h1>
+  <h3>Page 4 of 5: Program Selection</h3>
+</center>
+
+<hr>
+
+<form>
+  <fieldset>
+    <legend><b>Program Details</b></legend>
+
+    <p>
+      <label for="level"><b>Entry Level:</b></label><br>
+      <select id="level" name="level" required>
+        <option value="">-- Select Level --</option>
+        <option>First Year Applicant</option>
+        <option>Mature Applicant</option>
+        <option>Transfer Student</option>
+      </select>
+    </p>
+    
+    <p>
+      <label for="program"><b>Program of Choice:</b></label><br>
+      <select id="program" name="program" required>
+        <option value="">-- Select Program --</option>
+        <option>Computer Science (CS)</option>
+        <option>Information Technology (IT) / Management Information Systems (MIS)</option>
+        <option>Software Engineering (SE)</option>
+        <option>Cybersecurity / Information Security</option>
+         <option>Data Science / Analytics</option>
+      </select>
+    </p>
+    <p>
+      <label>Qualification Level For Programs</label>
+
+<div class="radio-horizontal">
+  <label class="radio-item">
+    <input type="radio" name="qualification_level" value="Degree" required>
+    <span>Degree</span>
+  </label>
+
+  <label class="radio-item">
+    <input type="radio" name="qualification_level" value="Masters">
+    <span>Masters</span>
+  </label>
+
+  <label class="radio-item">
+    <input type="radio" name="qualification_level" value="PhD">
+    <span>PhD</span>
+  </label>
+</div>
+
+      </p>
+   <fieldset>
+
+        <legend>Study Arrangement</legend>
+
+        <div class="form-group">
+  <label>Study Mode</label>
+
+  <div class="radio-list">
+    <label class="radio-item">
+      <input type="radio" name="studyMode" value="Regular" required>
+      Regular
+    </label>
+
+    <label class="radio-item">
+      <input type="radio" name="studyMode" value="Evening">
+      Evening
+    </label>
+
+    <label class="radio-item">
+      <input type="radio" name="studyMode" value="Weekend">
+      Weekend
+    </label>
+
+    <label class="radio-item">
+      <input type="radio" name="studyMode" value="Distance">
+      Distance/Online
+    </label>
+  </div>
+</div>
+
+
+       <div class="row">
+  <div class="col">
+    <label for="campus">Campus / Location</label>
+    <select id="campus" name="campus" required>
+      <option value="">-- Select Campus Location --</option>
+      <option>Main Campus</option>
+      <option>City Campus</option>
+      <option>Business Campus</option>
+    </select>
+  </div>
+
+  <div class="col">
+    <label for="duration">Duration (Years)</label>
+      <input
+      type="number"
+      id="'duration"
+      name="duration"
+      min=" 1"
+      max="6"
+      placeholder=" e.g  4 "
+      required
+  >
+    
+  </div>
+</div>
+
+
+       <div class="form-group">
+  <label for="intake">Intake</label>
+  <select id="intake" name="intake" required>
+    <option value="">-- Select Intake --</option>
+    <option value="January">Main intake(September / October)</option>
+    <option value="August">Second intake(January / February)</option>
+    <option value="September">others</option>
+  </select>
+</div>
+
+
+
+      </fieldset>
+
+  <br>
+
+  <center>
+    <a href="application3.html">← Back (Page 3)</a>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="application5.html">Next → (Page 5)</a>
+  </center>
+</form>
+
+</body>
+</html>

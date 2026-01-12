@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>University Application - Page 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body bgcolor="lavender" text="purple">
+
+<center>
+  <h1>University Application Form</h1>
+  <h3>Page 5 of 5: Funding & Declaration</h3>
+</center>
+
+<hr>
+
+<form>
+  <fieldset>
+    <fieldset>
+  <legend>Funding Information</legend>
+
+  <div class="form-group">
+    <label>How will your education be funded?</label>
+
+    <div class="radio-horizontal">
+      <label class="radio-item">
+        <input type="radio" name="funding" value="Parents/Guardian" required>
+        <span>Parents / Guardian</span>
+      </label>
+
+      <label class="radio-item">
+        <input type="radio" name="funding" value="Scholarship">
+        <span>Scholarship</span>
+      </label>
+
+      <label class="radio-item">
+        <input type="radio" name="funding" value="Self-sponsored">
+        <span>Self-sponsored</span>
+      </label>
+
+      <label class="radio-item">
+        <input type="radio" name="funding" value="Other">
+        <span>Other</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label for="sponsorName">Sponsor Full Name</label>
+      <input type="text" id="sponsorName" name="sponsorName" placeholder="e.g., Mr. jesnoit" required>
+    </div>
+
+    <div class="col">
+      <label for="relationship">Relationship to Applicant</label>
+      <select id="relationship" name="relationship" required>
+        <option value="">-- Select Relationship --</option>
+        <option>Father</option>
+        <option>Mother</option>
+        <option>Guardian</option>
+        <option>Self</option>
+        <option>Other</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label for="sponsorPhone">Sponsor Phone</label>
+      <input type="tel" id="sponsorPhone" name="sponsorPhone" placeholder="+233 XX XXX XXXX" required>
+    </div>
+
+    <div class="col">
+      <label for="sponsorEmail">Sponsor Email</label>
+      <input type="email" id="sponsorEmail" name="sponsorEmail" placeholder="sponsor@email.com">
+    </div>
+  </div>
+</fieldset>
+
+<fieldset>
+  <legend>Declaration & Signature</legend>
+
+  <div class="declaration-box">
+      <input type="checkbox" name="declaration" required>
+      <span>
+        I hereby declare that the information provided in this application is true, complete,
+    and accurate to the best of my knowledge. I understand that any false information,
+    misrepresentation, or omission may result in the rejection of my application or
+    withdrawal of admission if discovered at any stage.
+      </span>
+    </label>
+  </div>
+
+  <div class="row" style="margin-top:14px;">
+    <div class="col">
+      <label for="signatureName">Full Name (Signature)</label>
+      <input type="text" id="signatureName" name="signatureName" placeholder="Type your full name as signature" required>
+    </div>
+
+    <div class="col">
+      <label for="signDate">Date</label>
+      <input type="date" id="signDate" name="signDate" required>
+    </div>
+  </div>
+</fieldset>
+
+  <br>
+
+  <center>
+    <a href="application4.html">← Back (Page 4)</a>
+    <br><br>
+    <input type="submit" value="Submit Application">
+    <input type="reset" value="Clear Page">
+  </center>
+</form>
+
+</body>
+</html>
